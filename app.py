@@ -4,10 +4,9 @@ from PyPDF2 import PdfReader
 from multiprocessing import Pool
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores.pinecone import Pinecone
-from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-from langchain.llms import HuggingFaceHub
 from langchain.chat_models import ChatOpenAI
 import pinecone
 import os
